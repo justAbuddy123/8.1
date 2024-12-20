@@ -1,25 +1,13 @@
 #include <iostream>
-#include <bitset>
 using namespace std;
-
 int main() {
-    // Даны числа в двоичной системе
     string A = "101101";
     string B = "110011";
-
-    // Преобразование строк в целые числа
     int int_A = stoi(A, nullptr, 2);
     int int_B = stoi(B, nullptr, 2);
-
-    // Побитовая операция AND
     int and_result = int_A & int_B;
-
-    // Сумма чисел
     int sum_result = int_A + int_B;
-
-    // Вывод результатов
-    cout << "Побитовая операция AND: " << bitset<6>(and_result) << endl;
-    cout << "Сумма чисел в двоичной системе: " << bitset<7>(sum_result) << endl;
-
+    cout << "Побитовая: " << and_result << endl;
+    cout << "Сумма чисел: " << sum_result << endl;
     return 0;
 }
